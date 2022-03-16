@@ -7,19 +7,19 @@
 ================QuantumultX================
 
 [rewrite_local]
-^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/huang1179/QUAN/X/REW/Spotify.js
+^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/huang1179/Quan/X/Rew/Spotify.js
 
 
 ===================Loon====================
 
 [Script]
-http-response ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/huang1179/QUAN/X/REW/Spotify.js, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
+http-response ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/huang1179/Quan/X/Rew/Spotify.js, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
 
 
 ===================Surge===================
 
 [Script]
-spotify-proto = type=http-response,pattern=^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/huang1179/QUAN/X/REW/Spotify.js,script-update-interval=0
+spotify-proto = type=http-response,pattern=^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/huang1179/Quan/X/Rew/Spotify.js,script-update-interval=0
 
 
 [Mitm]
