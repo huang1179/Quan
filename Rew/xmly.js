@@ -12,7 +12,7 @@
 ********************************
 [rewrite_local]
 #喜马拉雅
-^http[s]?:\/\/((.+ximalaya.+)|(.+xmcdn.+)) url script-request-header https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/xmly.js
+^http[s]?:\/\/((.+ximalaya.+)|(.+xmcdn.+)) url script-request-header https://raw.githubusercontent.com/huang1179/Quan/X/Rew/xmly.js
 
 [mitm] 
 hostname = *.*xima*.*, *.xmcdn.com, *.*.*.*,
